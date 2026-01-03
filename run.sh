@@ -15,11 +15,6 @@ python3 train.py --dataset Texas --lr 0.01 --weight_decay 0.0 --hidden 64 --Ko 1
 python3 train.py --dataset Wisconsin --lr 0.01 --weight_decay 0.1 --hidden 128 --Ko 20 --Ke 17 --Gamma 0.3 --Epsilon 0.9 --lin_lr1 0.001 --lin_weight_decay1 0.1 --lin_lr2 0.1 --lin_weight_decay2 0.0001 --alpha_lin_lr 0.01 --alpha_lin_weight_decay 0.005 --optimizer_name RMSprop --dropoutClassifier1 0.3 --dropoutClassifier2 0.5 --seed 60 --epochs 1000 --split 0 --patience 200 --train_rate 0.6 --val_rate 0.2 --device 3 --runs 10
 
 
-#额外的实验
-python3 train.py --dataset Roman-empire --lr 0.05 --weight_decay 0.05 --hidden 256 --Ko 13 --Ke 15 --Gamma 0.5 --Epsilon 0.7 --lin_lr1 0.01 --lin_weight_decay1 0.0 --lin_lr2 0.05 --lin_weight_decay2 0.5 --alpha_lin_lr 0.001 --alpha_lin_weight_decay 0.05 --optimizer_name AdamW --dropoutClassifier1 0.0 --dropoutClassifier2 0.3 --seed 60 --epochs 1000 --split 0 --patience 200 --train_rate 0.5 --val_rate 0.25 --device 3 --runs 10
-
-python3 train.py --dataset Amazon-ratings --lr 0.001 --weight_decay 0.0005 --hidden 128 --Ko 16 --Ke 15 --Gamma 0.7 --Epsilon 0.5 --lin_lr1 0.01 --lin_weight_decay1 0.0001 --lin_lr2 0.05 --lin_weight_decay2 0.0 --alpha_lin_lr 0.001 --alpha_lin_weight_decay 0.0001 --optimizer_name AdamW --dropoutClassifier1 0.1 --dropoutClassifier2 0.7 --seed 60 --epochs 1000 --split 0 --patience 200 --train_rate 0.5 --val_rate 0.25 --device 3 --runs 10
-
 
 #半监督
 python3 train.py --dataset Cora --lr 0.05 --weight_decay 0.0001 --hidden 64 --Ko 13 --Ke 17 --Gamma 0.8 --Epsilon 0.3 --lin_lr1 0.01 --lin_weight_decay1 0.005 --lin_lr2 0.001 --lin_weight_decay2 0.5 --alpha_lin_lr 0.05 --alpha_lin_weight_decay 0.1 --optimizer_name RMSprop --dropoutClassifier1 0.2 --dropoutClassifier2 0.5 --seed 60 --epochs 1000 --split 2 --patience 200 --train_rate 0.025 --val_rate 0.025 --device 3 --runs 10
